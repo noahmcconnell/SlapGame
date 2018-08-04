@@ -1,51 +1,76 @@
-const ramsayBolton = {
-    name: 'Ramsay Bolton Crazy',
-    craziness: [
-        'Normalish',
-        'Crazy',
-        'PSYCHO'
-    ],
-    crazinessImgs: [
-        'assets/ramsay_and_yara.jpg',
-        'assets/gLvMOX5.gif'
+let craziness = 0;
+let hits = 0;
+let resetButton = $("#reset-button");
+let gameButtons = $("#annoy-button,#anger-button,#rage-button,#sleep-button,#steak-button,#wine-button");
 
-    ],
-    tolerance: 30,
-    annoy: 5,
-    anger: 10,
-    rage: 20,
-    craziness: 0,
+function annoy() {
+    craziness += 7;
+    update(true);
 }
 
-const ramHealth = {
-    name: 'Ramsay Bolton Health',
-    health: [
-        'Healthy',
-        'Ouch',
-        'Dog Food'
-    ],
+function anger() {
+    craziness += 12;
+    update(true);
+}
 
-    healthImgs: [
-        'assets/UnrealisticHideousBeaver.gif',
-        'assets/ramsay.jpg',
-    ],
-    tolerance: 30,
-    eyepoke: 5,
-    haymaker: 10,
-    dogs: 20,
-    Health: 100,
+function rage() {
+    craziness += 16;
+    update(true);
+}
+
+function sleep() {
+    craziness -= 4;
+    update()
+}
+
+function steak() {
+    craziness -= 8;
+    update()
+}
+
+function wine() {
+    craziness -= 12;
+    update()
+}
+
+function reset() {
+    craziness = 0;
+    hits = 0;
+    resetButton.addClass("invisible");
+    gameButtons.removeClass("invisible")
+    update()
+}
+
+function update(attack) {
+    if (craziness < 0) {
+        craziness = 0;
+    };
+    if (craziness >= 100) {
+        endGame();
+    }
+    if (attack === true) {
+        hits++;
+    };
+    updateView();
+}
+
+function endGame() {
+    craziness = 100;
+    resetButton.removeClass("invisible");
+    gameButtons.addClass("invisible")
+
+}
+function updateView() {
+    $("#craziness").text(craziness);
+    $("#hits").text(hits);
+    if (craziness < 34) {
+        $('img[src]').attr("src", "./assets/smile.jpg")
+    }
+    else if (craziness > 34 && craziness < 70) {
+        $('img[src]').attr("src", "./assets/cray.jpg")
+    }
+    else $("img[src]").attr("src", "./assets/sausage.gif")
 }
 
 
-const crazyImg = document.getElementById('crazy-img')
-const healthImg = document.getElementById('health-img')
-const name = document.getElementById('name')
-const craziness = document.getElementById('craziness')
-const health = document.getElementById('health')
-const annoyButton = document.getElementById('annoy-button')
-const angerButton = document.getElementById('anger-button')
-const rageButton = document.getElementById('rage-button')
-const eyepokeButton = document.getElementById('eyepoke-button')
-const haymakerButton = document.getElementById('haymaker-button')
-const dogsButton = document.getElementById('dogs-button')
 

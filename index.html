@@ -13,57 +13,43 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12" id="ramsay-buttons">
+            <div class="col-sm-12">
+                <h1>Ramsay Bolton</h1>
+            </div>
 
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+            <div class="row">
+                <h2> Can You Make Ramsay Mad?
+                    <span id="name"></span>
+                </h2>
+
+                <h2>Craziness:
+                    <span id="craziness">0</span>%
+                </h2>
+                <h2>Hits: <span id="hits">0</span>
+                </h2>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <h1>Ramsay Bolton</h1>
-            <img src="assets/bca0f90d09713caac6d4b633a6b55e52--ramsay-bolton-iwan-rheon.jpg" id="crazy-img" alt="CRAZY" />
-            <img src="assets/fa578a3a62ee5c63d17e3885eba76996--bolton-game-of-thrones-iwan-rheon.jpg" id="health-img" alt="Health" />
+        <div class="col-md-6">
+            <img class="img-responsive" src="./assets/smile.jpg" id="crazy-img" alt="CRAZY" />
         </div>
-    </div>
-    <div class="row">
-        <h2> Can You Make Ramsay Mad?
-            <span id="name"></span>
-        </h2>
-        <h2> Can You Kill Ramsay?
-            <span id="name"></span>
-        </h2>
-        <h2>Craziness:
-            <span id=craziness></span>
-        </h2>
-        <h2>Health:
-            <span id="health"></span>
-        </h2>
-        <div class="col-md-4">
+        <div class="attack">
             <button class="btn btn-success" onclick="annoy()" id="annoy-button">Annoy</button>
             <button class="btn btn-success" onclick="anger()" id="anger-button">Anger</button>
             <button class="btn btn-success" onclick="rage()" id="rage-button">RAGE</button>
         </div>
-        <div class="col-md-4">
-            <button class="btn btn-success" onclick="eyepoke()" id="annoy-button">Eye Poke</button>
-            <button class="btn btn-success" onclick="haymaker()" id="anger-button">Haymaker</button>
-            <button class="btn btn-success" onclick="dogs()" id="rage-button">Dogs</button>
+        <div class="protection">
+            <button class="btn btn-danger" onclick="sleep()" id="sleep-button">Sleep</button>
+            <button class="btn btn-danger" onclick="steak()" id="steak-button">Steak</button>
+            <button class="btn btn-danger" onclick="wine()" id="wine-button">Wine</button>
+            <button class="btn btn-primary invisible" onclick="reset()" id="reset-button">Reset</button>
         </div>
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="C:\source\codeworks\slapgame\node_modules\jquery\dist\jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 

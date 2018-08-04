@@ -1,0 +1,51 @@
+<div class="col-md-4">
+            <button class="btn btn-success" onclick="eyepoke()" id="annoy-button">Eye Poke</button>
+            <button class="btn btn-success" onclick="haymaker()" id="anger-button">Haymaker</button>
+            <button class="btn btn-success" onclick="dogs()" id="rage-button">Dogs</button>
+        </div>       
+         <h2>Health:
+            <span id="health">100</span>%
+        </h2>
+        <h2> Can You Kill Ramsay?
+            <span id="name"></span>
+        </h2>
+                      
+                        <img src="assets/fa578a3a62ee5c63d17e3885eba76996--bolton-game-of-thrones-iwan-rheon.jpg" id="health-img" alt="Health" />
+const ramsayBolton = {
+    name: 'Ramsay Bolton Crazy',
+    craziness: [
+        'Normalish',
+        'Crazy',
+        'PSYCHO'
+    ],
+    crazinessImgs: [
+        'assets/ramsay_and_yara.jpg',
+        'assets/gLvMOX5.gif'
+
+    ],
+    tolerance: 30,
+    annoy: 5,
+    anger: 10,
+    rage: 20,
+    craziness: 0,
+}
+
+const ramHealth = {
+    name: 'Ramsay Bolton Health',
+    health: [
+        'Healthy',
+        'Ouch',
+        'Dog Food'
+    ],
+
+    healthImgs: [
+        'assets/UnrealisticHideousBeaver.gif',
+        'assets/ramsay.jpg',
+    ],
+    tolerance: 30,
+    eyepoke: 5,
+    haymaker: 10,
+    dogs: 20,
+    Health: 100,
+}
+

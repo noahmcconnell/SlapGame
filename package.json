@@ -1,0 +1,24 @@
+{
+  "name": "slapgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahmcconnell/SlapGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahmcconnell/SlapGame/issues"
+  },
+  "homepage": "https://github.com/noahmcconnell/SlapGame#readme"
+}
