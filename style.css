@@ -1,0 +1,45 @@
+body {
+background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+height: 100vh;
+
+}
+img {
+    display: block;
+    max-width:600px;
+    max-height:600px;
+    object-fit:cover; 
+  }
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .attack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+ 
+
+ }
+ .attack button, .protection button{
+    margin-top: 20px;
+    width: 100px;
+ }
+ .protection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+.game-image button {
+    width: 82%;
+    margin-left: 9%;
+    margin-top: 60px;
+}
+

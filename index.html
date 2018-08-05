@@ -13,44 +13,50 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 text-center">
                 <h1>Ramsay Bolton</h1>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-xs-12">
-                </div>
-            </div>
-            <div class="row">
+        <div class="row">
+            <div class="col-xs-12">
                 <h2> Can You Make Ramsay Mad?
                     <span id="name"></span>
                 </h2>
-
-                <h2>Craziness:
-                    <span id="craziness">0</span>%
-                </h2>
-                <h2>Hits: <span id="hits">0</span>
-                </h2>
             </div>
         </div>
-        <div class="col-md-6">
-            <img class="img-responsive" src="./assets/smile.jpg" id="crazy-img" alt="CRAZY" />
-        </div>
-        <div class="attack">
-            <button class="btn btn-success" onclick="annoy()" id="annoy-button">Annoy</button>
-            <button class="btn btn-success" onclick="anger()" id="anger-button">Anger</button>
-            <button class="btn btn-success" onclick="rage()" id="rage-button">RAGE</button>
-        </div>
-        <div class="protection">
-            <button class="btn btn-danger" onclick="sleep()" id="sleep-button">Sleep</button>
-            <button class="btn btn-danger" onclick="steak()" id="steak-button">Steak</button>
-            <button class="btn btn-danger" onclick="wine()" id="wine-button">Wine</button>
-            <button class="btn btn-primary invisible" onclick="reset()" id="reset-button">Reset</button>
-        </div>
+        <div class="col-xs-12 text-center">
+            <h2>Craziness:
+                <span id="craziness">0</span>%
+            </h2>
+            <h2>Hits:
+                <span id="hits">0</span>
+            </h2>
 
+        </div>
     </div>
-    <script src="C:\source\codeworks\slapgame\node_modules\jquery\dist\jquery.min.js"></script>
+    <div class="container-fluid">
+            <div class="row">
+                <div class="attack col-sm-4">
+                    <button class="btn btn-success" onclick="annoy()" id="annoy-button">Annoy</button>
+                    <button class="btn btn-success" onclick="anger()" id="anger-button">Anger</button>
+                    <button class="btn btn-success" onclick="rage()" id="rage-button">RAGE</button>
+                </div>
+                <div class="col-sm-4 game-image">
+                    <img class="center-block" src="./assets/smile.jpg" id="crazy-img" alt="CRAZY" />
+                    <button class="btn btn-primary invisible" onclick="reset()" id="reset-button">Reset</button>
+                </div>
+                <div class="protection col-sm-4">
+                    <button class="btn btn-danger" onclick="sleep()" id="sleep-button">Sleep</button>
+                    <button class="btn btn-danger" onclick="steak()" id="steak-button">Steak</button>
+                    <button class="btn btn-danger" onclick="wine()" id="wine-button">Wine</button>
+                </div>
+            </div>
+            
+        </div>
+        <script src="C:\source\codeworks\slapgame\node_modules\jquery\dist\jquery.min.js"></script>
     <script src="app.js"></script>
+    </div>
 </body>
 
 
